@@ -14,8 +14,10 @@ namespace TrabalhoMVC.Models
         public int Codigo { get; set; }
         [Required]
         public string Nome { get; set; }
-        
+
+        [Display(Name = "Estado")]
         public int CodigoEstado { get; set; }
+
         [Required]
         [ForeignKey("CodigoEstado")]
         public Estado Estado { get; set; }
